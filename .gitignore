@@ -1,0 +1,24 @@
+# Competition data (not redistributable)
+data/
+
+# Generated features, model weights, checkpoints
+artifacts/
+checkpoints/
+*.npz
+*.pt
+*.pth
+*.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Notebooks / IDE / OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+# Core pipeline (pipeline/, tools/) - versions used to produce the final submission
+numpy==2.5.2
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.8.0
+lightgbm==4.7.0
+torch==2.6.0
+pillow==12.3.0
+opencv-python==5.0.0.93
+open_clip_torch==3.3.0
+ultralytics==8.4.143
+tqdm==4.67.1
+matplotlib==3.10.8
+
+# Optional: supervised baseline (baselines/)
+# torchvision==0.21.0
+# timm==1.0.29
+# albumentations==2.0.8
+
+# Optional: video-transformer experiment (experiments/solve_v8_video.py)
+# transformers
