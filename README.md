@@ -19,6 +19,8 @@ Kaggle · *Cooked or Not?* · binary video classification · ROC-AUC
   <img alt="Public leaderboard AUC across 32 submissions, rising from 0.538 to 0.791" src="assets/leaderboard_light.png">
 </picture>
 
+> **New here?** Start with the [walkthrough notebook](notebooks/walkthrough.ipynb). It tells the whole story in 8 short sections, with live plots and every number recomputed from the data.
+
 ## TL;DR
 
 | | |
@@ -121,6 +123,7 @@ The public leaderboard scores ~30% of the test set (~525 clips), so top submissi
 ## Repository layout
 
 ```
+├── notebooks/         walkthrough.ipynb: the guided tour (start here)
 ├── pipeline/          the 12 scripts that produce the final submission, in run order
 ├── experiments/       every other approach that reached the leaderboard (V2–V28)
 ├── baselines/         supervised EfficientNet-B3 + GRU / attention baseline (V1)
