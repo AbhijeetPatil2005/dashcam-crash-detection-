@@ -30,6 +30,6 @@ Every approach that reached the public leaderboard but is not part of the final 
 
 - Everything trained directly on the train labels (V1, V2, V13, V14) lands between 0.54 and 0.69. See [docs/FINDINGS.md](../docs/FINDINGS.md) for why.
 - Pseudo-labelling helps only once the teacher is strong: V5 (teacher ≈ 0.68) **lost** 0.04, while V21 (teacher ≈ 0.785) **gained** 0.003.
-- Hand-weighted (V22) and automatic (V23) blends of everything underperform a single well-fed LightGBM (V24). Most earlier submissions are highly correlated, so averaging them mostly averages in noise.
+- Hand-weighted (V22) and automatic (V23) blends of everything underperform a single well-fed LightGBM (V24). The components correlate 0.86–0.98, so there is little diversity to gain, and weaker members dilute the strong ones.
 
 Scripts are kept verbatim apart from path handling, which now goes through [`config.py`](../config.py). Docstrings reflect the hypothesis at the time, including some that later turned out wrong (for example the "sunny train / night test" theory; see FINDINGS).

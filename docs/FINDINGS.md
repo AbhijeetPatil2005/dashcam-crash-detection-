@@ -42,7 +42,7 @@ The two largest gains are **not using train labels** and **resolution**. Small o
 | **Semantic velocity**: rate of change of frame embeddings (V19) | 0.763 → 0.726 | Turns, bumps and lighting changes move embeddings as much as impacts do. |
 | **Manifold smoothing**: k-NN diffusion of V24 scores over CLIP embeddings (V26) | 0.789 → 0.763 | Test neighbours in embedding space don't reliably share labels (see §1). |
 | **Cleaning train labels** (V13, V14) | 0.605, 0.692 | Label noise wasn't the problem; train construction was. |
-| **Blend everything** (V22 hand weights, V23 automatic) | 0.781, 0.785 | Most submissions correlate above 0.95; averaging them averages noise. |
+| **Blend everything** (V22 hand weights, V23 automatic) | 0.781, 0.785 | Components correlate 0.86–0.98 (median 0.91), so there is little diversity to gain, and the weaker members (V7, V15 at about 0.74) drag the strong ones down. |
 | **Qwen2.5-VL-7B zero-shot**: 5 frames, 4-bit NF4, P(Yes) from next-token logits ([`kaggle/`](../kaggle/)) | AUC **0.648** on 300 labelled train clips; ρ = 0.607 with V27b | A general VLM shown 5 sparse frames is weaker than CLIP-family temporal features. It was not submitted. Engineering detail: 1.26 s per clip per T4 with one model replica per GPU. |
 | **Pair-difference adjustment**: score each clip relative to its matched partner | Train: 0.694 → 0.749 (proxy model, λ = 2) | Rejected without submitting. §1 shows test pairs carry the *opposite* signature, so it would hurt on test. |
 
