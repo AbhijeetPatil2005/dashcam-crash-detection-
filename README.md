@@ -27,7 +27,7 @@ Kaggle · *Cooked or Not?* · binary video classification · ROC-AUC
 |---|---|
 | **Task** | Given 30 frames (384×224) of dashcam video, output the probability that a crash happens. |
 | **Data** | 3,000 labelled training clips, 1,750 test clips. |
-| **Best public score** | **0.79098 AUC** (V27b), rank 126 / 229 on the public leaderboard (5 Oct 2026). |
+| **Best public score** | **0.79098 AUC** (V27b) on the public leaderboard (5 Oct 2026). |
 | **Key result** | A fully supervised video model scored **0.538**. Dropping supervised training in favour of zero-shot CLIP-family features, tracking physics and test-set pseudo-labels reached **0.791**. |
 | **Verified** | `tools/verify_pipeline.py --full` rebuilds V24 → V25b → V27b from cached features; all three match the submitted CSVs exactly (max abs diff 0.0). |
 
