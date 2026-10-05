@@ -1,0 +1,33 @@
+submitted_utc,file,public_auc,description
+2026-09-22 19:32,submission_v1_effnet_gru.csv,0.5377,EfficientNet-B3 GRU+Attn ensemble 5fold TTA 20260923_010215
+2026-09-23 06:22,submission_v2.csv,0.55737,V2 ensemble
+2026-09-23 06:23,submission_v2_motion.csv,0.57495,V2 Motion Only
+2026-09-23 06:24,submission_zero_shot.csv,0.61681,Zero Shot Diff Spike
+2026-09-23 06:25,submission_zero_shot_ensemble.csv,0.63884,Zero Shot Ensemble
+2026-09-23 06:28,submission_zero_shot_final.csv,0.67702,Zero Shot Final CLIP+Physics
+2026-09-24 04:36,submission_v3_anomaly.csv,0.66455,V3 Anomaly+ZeroShot
+2026-09-24 05:44,submission_v4.csv,0.68446,V4 Ensemble
+2026-09-24 05:47,submission_v5_pseudo.csv,0.64587,V5 Pseudo-label Self-Training
+2026-09-24 05:48,submission_v4_clip_only.csv,0.69832,V4 CLIP Only
+2026-09-24 06:34,submission_v6_ultimate.csv,0.71953,V6 Foundation Mega-Ensemble
+2026-09-26 04:20,submission_v7_yolo.csv,0.73669,V7 YOLO Physics + V6 Semantics
+2026-09-26 05:21,submission_v8_video.csv,0.72677,V8 video foundation models
+2026-09-26 09:16,submission_v9_masked_flow.csv,0.71371,V9 Masked Flow + V7
+2026-09-26 09:19,submission_v10_distillation.csv,0.71803,V10 Test-Set Distillation
+2026-09-26 09:25,submission_v11_lgb_flow.csv,0.69236,V11 LGBM Masked Flow
+2026-09-30 09:37,submission_v13_clean_r3d.csv,0.60494,V13 ResNet3D on Cleaned Train Set
+2026-09-30 09:39,submission_v14_lgb_clean.csv,0.69236,V14 LightGBM Flow on Clean Train
+2026-09-30 09:43,submission_v15_grandmaster.csv,0.74714,V15 Grandmaster Ensemble
+2026-09-30 10:04,submission_v17_ultimate_physics.csv,0.72983,V17 Ultimate Physics + Grandmaster
+2026-10-03 10:11,submission_v18_ultimate.csv,0.76349,V18 Ultimate SigLIP+EVA+CLIP Temporal Ensemble
+2026-10-03 17:48,submission_v19_semantic_velocity.csv,0.72632,V19 Semantic Velocity + High-Res SigLIP-378
+2026-10-03 17:49,submission_v20_highres.csv,0.78547,V20 High-Res SigLIP-378 Temporal Ensemble
+2026-10-04 05:23,submission_v21_transductive.csv,0.78826,V21 Transductive Pseudo-Labeling
+2026-10-04 05:24,submission_v22_apex.csv,0.78103,V22 Apex Ensemble
+2026-10-04 09:55,submission_v23_autoblend.csv,0.78455,V23 Auto-Blender (All Models)
+2026-10-04 13:45,submission_v24_feature_blender.csv,0.78943,"V24 Supervised Feature Blender (77 features, 5-fold LGB)"
+2026-10-04 19:08,submission_v25_standalone.csv,0.78755,V25 Standalone (SigLIP2 + ViT-H DFN5B + Physics)
+2026-10-05 02:13,submission_v25b_final_blend.csv,0.78829,V25b Ultimate Supervised Blender (Overnight + V24 Features)
+2026-10-05 02:16,submission_v26_manifold_smoothed.csv,0.76322,V26 Manifold Smoothing (K-NN Diffusion on CLIP Embeddings)
+2026-10-05 04:24,submission_v27b_physics_injection.csv,0.79098,V27b Surgical Physics Injection (85% V24 + 8% V16 TTC Physics + 7% V25b Overnight)
+2026-10-05 04:28,submission_v28_final.csv,0.79022,V28 Final Physics-Vision (90% V24 + 10% V16 Advanced Physics)
